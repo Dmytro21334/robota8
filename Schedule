@@ -1,0 +1,11 @@
+class Schedule {
+    List<Event> events = new ArrayList<>();
+
+    void addEvent(Event event) {
+        events.add(event);
+    }
+
+    void printAllEvents() {
+        events.forEach(System.out::println);
+    }
+}
