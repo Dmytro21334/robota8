@@ -1,0 +1,8 @@
+public class Main {
+    public static void main(String[] args) {
+        Schedule schedule = new Schedule();
+        schedule.addEvent(new Event("Meeting", LocalDateTime.now().plusDays(1), "Office"));
+        schedule.addEvent(new Event("Workout", LocalDateTime.now().plusDays(2), "Gym"));
+        schedule.printAllEvents();
+    }
+}
